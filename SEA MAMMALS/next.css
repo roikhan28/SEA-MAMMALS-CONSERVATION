@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-image: url(underwater-1.png);
+  background-size: cover;
+  text-transform: uppercase;
+
+}
+
+header {
+  float: none;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+  align-content: center;
+  align-self: center;
+  text-justify: auto;
+  
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  justify-content: center;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transform: translateY(0%);
+}
+
+/* 
+
+
+*/
+
+button{
+  width: 200px;
+  margin-top: 80px;
+  padding: 15px 0;
+  text-align: center;
+  margin-left: 1080px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #188bc5;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;  
+  top: -250px;
+}
+
+
+span{
+  background: #188bc5;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  z-index: -1;
+  transition: 0.5s;
+  right: 0; 
+}
+
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
+}

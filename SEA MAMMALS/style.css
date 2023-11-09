@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    width: 100%;
+    background-position: center;
+    background-image: url(underwater-1.png);
+    background-size: cover;
+  }
+  .logo{
+    width: 500px;
+    cursor: pointer;
+    justify-content: center;
+    padding: 0% 0%;
+  }
+  /* Style the topnav links */
+  
+  .topnav {
+    float: none;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 40px;
+    text-decoration: none;
+    align-content: center;
+    align-self: center;
+    text-justify: auto;
+    
+  }
+.topnav a{
+  color: #f1f1f1;
+}
+.topnav h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+  button{
+    width: 200px;
+    margin-top: 80px;
+    padding: 15px 0;
+    text-align: center;
+    margin-left: 1080px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #188bc5;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;  
+  }
+
+
+span{
+    background: #188bc5;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    z-index: -1;
+    transition: 0.5s;
+    right: 0; 
+}
+
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+        
+  /* Style the content */
+  .content {
+    background-color: rgba(20, 107, 230, 0.418);
+    padding: 10px; /* Should be removed. Only for demonstration */
+    width: 100%;
+    transform: translateY(0%);
+  }
+  .content h2{
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  .content h3{
+    margin-left: 40px;
+  }
+  .content p{
+    margin-right: 150px;
+    margin-left: 80px;
+  }
+  .part{
+    display: inline-block;
+    margin-left: 50px;
+  }
+  .photo {
+    margin-left: 40px;
+    display: flex;
+  }
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100px/* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+  /* Style the footer */
+  .footer {
+    background-color: #46496dfa;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+  }
+ .footer a{
+  background-color: #46496dbe ;
+  color: #f2f2f2;
+  text-decoration-line: none;     
+  margin-left: 450px;
+  top: -200PX;
+ }
+ .column p{
+  text-align: center;
+  margin-left:-350px;
+  justify-content: flex-end;
+ }
+ 
+ .column img{
+  margin-left: 125px;
+  width: 200px;
+
+ }
+ button{
+  justify-content: space-between  ;
+  align-content: space-between;
+  
+ }
+ .footer img{
+  width: 250px;
+ }
